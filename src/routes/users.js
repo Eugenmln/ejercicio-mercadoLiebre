@@ -1,11 +1,12 @@
 const express = require ("express");
 const router = express.Router();
-const path = require("path")
+const path = require("path");
+const controller = require("../controllers/usersController");
 
 
-router.get("/register", (req,res) =>{
-    res.sendFile(path.resolve(__dirname, "../views/register.html"))
-});
+router.get("/register", controller.register)
+
+router.get("/login", controller.login);
 
 
 
