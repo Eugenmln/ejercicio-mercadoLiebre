@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head'); %>
+    <body>
+        <%- include('./partials/header'); %>
+        <main class="login">
+            <section class="section-login">
+                <form action="/" method="POST">
+                    <div class="formulario">
+                        <h2 class="login-titular">Ingresá</h2>
+                    </div>
+                    <div class="formulario">
+                        <label for="user" class="relleno-formulario">Nombre de Usuari@:</label>
+                        <input type="text" name="user" id="user" placeholder="Nombre de Usuari@" class="texto" minlength="4">
+                    </div>
+                    <div class="formulario">
+                        <label for="password" class="relleno-formulario">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Elegí tu contraseña" class="texto" minlength="8">
+                    </div>    
+
+
+                    <div class="enviar-login">
+                        <input type="submit" value="Enviar" class="boton-login">
+                        <input type="reset" value="Cancelar" class="boton-login"> 
+                    </div>
+
+
+                </form>
+            </section>
+        </main>
+        <%- include('./partials/footer'); %>
+        
+    </body>
+</html>
